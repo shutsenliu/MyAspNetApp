@@ -1,6 +1,7 @@
 # 使用 ASP.NET Core 執行環境
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
+ENV ASPNETCORE_URLS=http://+:80
 EXPOSE 80
 
 # 使用 .NET SDK 建置專案
