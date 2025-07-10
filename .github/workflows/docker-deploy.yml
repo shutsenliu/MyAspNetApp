@@ -31,4 +31,4 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Restart Azure Web App
-        run: az webapp restart --name <your-app-name> --resource-group <your-resource-group>
+        run: az webapp restart --name docker00 --resource-group docker00
